@@ -1,3 +1,5 @@
+/*Guanqun Gao*/
+
 USE AdventureWorks2019
 GO
 --1. How many products can you find in the Production.Product table?
@@ -222,50 +224,51 @@ HAVING SUM(SUMQuant) > 100
 
 --23.  List all of the possible ways that suppliers can ship their products. Display the results as below
 
-SELECT *
-FROM Suppliers
+SELECT DISTINCT s.CompanyName AS "Supplier Company Name", sp.CompanyName AS "Shipping Company Name"
+FROM Suppliers s
+JOIN Products p
+ON p.SupplierID = s.SupplierID
+JOIN [Order Details] od
+ON od.ProductID = p.ProductID
+JOIN Orders o
+ON o.OrderID = od.OrderID
+JOIN Shippers sp
+ON o.ShipVia = sp.ShipperID
 
-
-SELECT *
-FROM Shippers
 
 
 --24.  Display the products order each day. Show Order date and Product Name.
 
+SELECT o.OrderDate, p.ProductName
+FROM [Order Details] od
+JOIN Orders o
+ON od.OrderID = o.OrderID
+JOIN Products p
+ON od.ProductID = p.ProductID
+ORDER BY o.OrderDate
+
+
 --25.  Displays pairs of employees who have the same job title.
 
---26.  Display all the Managers who have more than 2 employees reporting to them.
+SELECT DISTINCT e.Title, e.FirstName + ' ' + e.LastName AS "Employee name"
+FROM Employees e 
+JOIN Employees q
+ON e.Title = q.Title
+WHERE e.EmployeeID != q.EmployeeID
+
+
+--26.  Display all the Managers who have more than 2 employees reporting to them..
+
+SELECT ReportsTo, COUNT(ReportsTo) AS "Reportee"
+FROM Employees e
+GROUP BY ReportsTo
+HAVING COUNT(ReportsTo) > 2
+
 
 --27.  Display the customers and suppliers by city. The results should have the following columns
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SELECT s.City, s.CompanyName, s.ContactName, 'Supplier' as "Type" FROM Suppliers AS s
+UNION
+SELECT c.City, c.CompanyName, c.ContactName, 'Customer' as "Type" FROM Customers AS c
 
 
