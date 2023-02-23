@@ -28,4 +28,4 @@
 
 *System.Array.CopyTo() method copies the elements of one array to another existing array, while System.Array.Clone() method creates a new array that is a copy of the original array.*
 
-*The new array is a shallow copy, which means that the elements of the new array are references to the same objects as the elements of the original array. If the original array contains reference types, modifying the elements of the new array will also modify the elements of the original array. *
+*The new array is a shallow copy, which means that the elements of the new array are references to the same objects as the elements of the original array. If the original array contains reference types, modifying the elements of the new array will also modify the elements of the original array.*
