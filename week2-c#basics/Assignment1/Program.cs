@@ -1,4 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
 
 
 using UnderstandingTypes;
@@ -52,9 +51,28 @@ Console.WriteLine("{0} centuries = {1} years = {2} days = {3} hours = {4} minute
 
 
 
-Console.Write("\n");
-Console.Write("Q3");
-Console.Write("\n");
+
+////Practice loops and operators
+
+
+
+Console.Write("\nQ1:\n");
+////1. FizzBuzzis game
+Exercise03 ex = new Exercise03();
+ex.FizzBuzz();
+
+
+
+Console.Write("\nQ2:\n");
+//2. Print-a-Pyramid
+Console.Write("How many floors does this pyramid have? ");
+int num = int.Parse(Console.ReadLine());
+PrintPyramid.Pyramidprinter(num);
+
+
+
+
+Console.Write("\nQ3\n");
 //3. Create a console application that can generate an integer between 1 and 3 then ask the user to guesss.
 Guessnumber gn = new Guessnumber();
 int target = gn.generatenumber();
@@ -64,8 +82,26 @@ gn.guessnumber(guessnum, target);
 
 
 
+Console.Write("\nQ4\n");
+//4. calculates how many days old the person with given birth date is currently
+Console.Write("Enter your birth date (MM/dd/yyyy): ");
+DateTime birthDate = DateTime.Parse(Console.ReadLine());
+int daysOld = Birthdatecalc.Birthdatecalculator(birthDate);
+Console.Write($"the person is {daysOld} day old.");
 
 
+Console.Write("\nQ5\n");
+//5. greets the user
+SendGreetings sg = new SendGreetings();
+sg.GreetingsSender();
+
+
+
+Console.Write("\nQ6\n");
+//6. count to 24
+NumCounter nc = new NumCounter();
+nc.NumberCounter();
 
 
 Console.ReadLine();
+
