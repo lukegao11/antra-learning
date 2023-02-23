@@ -5,6 +5,7 @@ using UnderstandingTypes;
 
 Console.Write("Q1");
 Console.Write("\n");
+
 //1. Practice number sizes and ranges
 Console.WriteLine("Size of sbyte: " + sizeof(sbyte) + " bytes");
 Console.WriteLine("Minimum value of sbyte: " + sbyte.MinValue);
@@ -23,10 +24,11 @@ Console.WriteLine("Minimum value of byte: " + int.MinValue);
 Console.WriteLine("Maximum value of byte: " + int.MaxValue);
 
 
+
+
+
 Console.Write("\n");
-
 Console.Write("Q2");
-
 Console.Write("\n");
 
 //2.Write program to enter an integer number of centuries and convert it to years, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds.
@@ -47,10 +49,11 @@ Console.WriteLine("{0} centuries = {1} years = {2} days = {3} hours = {4} minute
 
 
 
+
+
+
 Console.Write("\n");
-
 Console.Write("Q3");
-
 Console.Write("\n");
 //3. Create a console application that can generate an integer between 1 and 3 then ask the user to guesss.
 Guessnumber gn = new Guessnumber();
