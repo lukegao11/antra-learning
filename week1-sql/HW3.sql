@@ -92,7 +92,7 @@ ON c.CustomerID = o.CustomerID
 GROUP BY c.City
 HAVING SUM(cte.[Product Type Count by Order])>=2;
 
---7. List all Customers who have ordered products, but have the ‘ship city’ on the order different from their own customer cities.
+--7. List all Customers who have ordered products, but have the â€˜ship cityâ€™ on the order different from their own customer cities.
 
 SELECT c.ContactName
 FROM Customers c
