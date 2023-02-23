@@ -1,6 +1,10 @@
 //1. Copying an Array
 using HW5;
 
+
+
+Console.Write("\nQ1:\n");
+
 int[] arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 int[] arr1 = new int[10];
 for (int i = 0; i < arr.Length; i++) {
@@ -20,11 +24,13 @@ foreach (int i in arr)
 
 
 //2.manage a list of elements.
+Console.Write("\nQ2:\n");
 manageitem mi = new manageitem();
 mi.run();
 
 
 //3. find prime in range
+Console.Write("\nQ3:\n");
 Console.WriteLine("please input the start number of the range where you want to find prime numbers");
 int startNum = int.Parse(Console.ReadLine());
 Console.WriteLine("please input the end number of the range where you want to find prime numbers");
@@ -44,6 +50,7 @@ foreach (int i in primeArr)
 
 
 //4. rotate and sum
+Console.Write("\nQ4:\n");
 RotateSumArray RotateSumArray= new RotateSumArray();
 RotateSumArray.RotateSum();
 
@@ -52,12 +59,14 @@ RotateSumArray.RotateSum();
 
 
 //5. find the longest sequence
+Console.Write("\nQ5:\n");
 Console.Write("Enter an integer array, seperat by space: ");
 int[] arrayfor5 = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 FindLongestSequence.FindLongest(arrayfor5);
 
 
 //7. find the frequent number
+Console.Write("\nQ7:\n");
 Console.Write("Enter an integer array, seperat by space: ");
 int[] arrayfor7 = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 int res7 = FindFrequentNum.FindMostFrequentNumber(arrayfor7);
@@ -67,22 +76,26 @@ Console.WriteLine("the most frequent number is {0}", res7);
 //string
 
 //1. reverse string
+Console.Write("\nQ1:\n");
 ReverseString.ReverseStringUsingChar();
 ReverseString.ReverseStringUsingLoop();
 
 
 //2. reverse sentence
+Console.Write("\nQ2:\n");
 ReverseSentence.Reverser();
 
 
 
 //3. extract palindromes
+Console.Write("\nQ3:\n");
 Console.WriteLine("Enter a sentence:");
 string sent = Console.ReadLine();
 ExtractPalin.PalindromeExtracter(sent);
 
 
 //4. url parse
+Console.Write("\nQ4:\n");
 Console.WriteLine("Enter a url:");
 string url = Console.ReadLine();
 string protocol, server, resource;
