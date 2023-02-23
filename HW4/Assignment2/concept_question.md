@@ -1,4 +1,4 @@
-# 02 Arrays and Strings
+# Arrays and Strings
 
 
 ## Test your Knowledge
