@@ -64,4 +64,33 @@ int res7 = FindFrequentNum.FindMostFrequentNumber(arrayfor7);
 Console.WriteLine("the most frequent number is {0}", res7);
 
 
+//string
+
+//1. reverse string
+ReverseString.ReverseStringUsingChar();
+ReverseString.ReverseStringUsingLoop();
+
+
+//2. reverse sentence
+ReverseSentence.Reverser();
+
+
+
+//3. extract palindromes
+Console.WriteLine("Enter a sentence:");
+string sent = Console.ReadLine();
+ExtractPalin.PalindromeExtracter(sent);
+
+
+//4. url parse
+Console.WriteLine("Enter a url:");
+string url = Console.ReadLine();
+string protocol, server, resource;
+ParseUrl.Urlparser(url, out protocol, out server, out resource);
+Console.WriteLine($"Protocol: {protocol}");
+Console.WriteLine($"Server: {server}");
+Console.WriteLine($"Resource: {resource}");
+
+
+
 
