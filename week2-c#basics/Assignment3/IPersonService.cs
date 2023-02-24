@@ -11,6 +11,6 @@ namespace Week2Assignment3
     {
         int CalculateAge(DateTime birthDate);
         decimal CalculateSalary(decimal baseSalary);
-        List<Address> GetAddresses();
+        List<string> GetAddresses();
     }
 }

@@ -13,8 +13,11 @@ namespace Week2Assignment3
         public DateTime JoinDate { get; set; }
         public decimal BonusSalaryPerYear { get; set; }
 
-        public Instructor(decimal bonusSalaryPerYear)
+        public Instructor(Department department, bool isDepartmentHead, DateTime joinDate, decimal bonusSalaryPerYear, DateTime birthDate, List<string> addresses) : base(birthDate, addresses)
         {
+            Department = department;
+            IsDepartmentHead = isDepartmentHead;
+            JoinDate = joinDate;
             BonusSalaryPerYear = bonusSalaryPerYear;
         }
 

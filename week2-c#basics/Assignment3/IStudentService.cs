@@ -8,7 +8,7 @@ namespace Week2Assignment3
 {
     public interface IStudentService : IPersonService
     {
-        List<Course> GetCourses();
+        List<Course> Courses { get; set; }
         double CalculateGPA();
     }
 }

@@ -10,7 +10,14 @@ namespace Week2Assignment3
     public class Person : IPersonService
     {
         public DateTime BirthDate { get; set; }
-        public List<Address> Addresses { get; set; }
+        public List<string> Addresses { get; set; }
+
+        public Person(DateTime birthDate, List<string> addresses)
+        {
+            BirthDate = birthDate;
+            Addresses = addresses;
+        }
+
 
         public int CalculateAge(DateTime birthDate)
         {
@@ -28,7 +35,7 @@ namespace Week2Assignment3
             return baseSalary;
         }
 
-        public List<Address> GetAddresses()
+        public List<string> GetAddresses()
         {
             return Addresses;
         }
