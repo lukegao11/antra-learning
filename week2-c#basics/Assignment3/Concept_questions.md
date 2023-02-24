@@ -8,9 +8,7 @@ protected: The protected access modifier allows access from within the same pack
 default (package-private): The default access modifier (also called package-private) allows access from within the same package only. Class members with default access can be accessed by classes in the same package but not by classes in other packages.
 
 private: The private access modifier is the most restrictive and allows access only from within the same class. Private class members cannot be accessed by any other class.
-
 public protected: This combination is not valid because both modifiers are mutually exclusive.
-
 private protected: This combination is also not valid because both modifiers are mutually exclusive.
 ### 2. What is the difference between the static, const, and readonly keywords when applied to a type member?
 ### 3. What does a constructor do?
