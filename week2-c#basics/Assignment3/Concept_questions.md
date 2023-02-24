@@ -1,7 +1,17 @@
 # Object-Oriented Programming
 ## Test your knowledge
 ### 1. What are the six combinations of access modifier keywords and what do they do? 
+public: The public access modifier is the most permissive and allows access from any other class in any package. Public class members can be accessed without any restrictions.
 
+protected: The protected access modifier allows access from within the same package and subclasses in any package. Protected class members can be accessed by classes in the same package or by subclasses of the class in any package.
+
+default (package-private): The default access modifier (also called package-private) allows access from within the same package only. Class members with default access can be accessed by classes in the same package but not by classes in other packages.
+
+private: The private access modifier is the most restrictive and allows access only from within the same class. Private class members cannot be accessed by any other class.
+
+public protected: This combination is not valid because both modifiers are mutually exclusive.
+
+private protected: This combination is also not valid because both modifiers are mutually exclusive.
 ### 2. What is the difference between the static, const, and readonly keywords when applied to a type member?
 ### 3. What does a constructor do?
 ### 4. Why is the partial keyword useful?
