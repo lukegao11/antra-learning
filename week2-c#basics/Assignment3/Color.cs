@@ -28,8 +28,5 @@ namespace Week2Assignment3
 
         public int GetGrayscale() { return (red + blue + green)/3;}
 
-
-
-
     }
 }
