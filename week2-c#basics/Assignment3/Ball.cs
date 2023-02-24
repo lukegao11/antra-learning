@@ -32,10 +32,6 @@ namespace Week2Assignment3
             return this.ThrowCounter;
         }
 
-
-
-
-
     }
 
 }
