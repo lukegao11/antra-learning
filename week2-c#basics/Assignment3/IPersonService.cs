@@ -9,7 +9,7 @@ namespace Week2Assignment3
 {
     public interface IPersonService
     {
-        int CalculateAge(DateTime birthDate);
+        int CalculateAge();
         decimal CalculateSalary(decimal baseSalary);
         List<string> GetAddresses();
     }

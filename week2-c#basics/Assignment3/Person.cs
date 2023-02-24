@@ -19,11 +19,11 @@ namespace Week2Assignment3
         }
 
 
-        public int CalculateAge(DateTime birthDate)
+        public int CalculateAge()
         {
             DateTime today = DateTime.Today;
-            int age = today.Year - birthDate.Year;
-            if (birthDate > today.AddYears(-age))
+            int age = today.Year - BirthDate.Year;
+            if (BirthDate > today.AddYears(-age))
                 age--;
             return age;
         }
