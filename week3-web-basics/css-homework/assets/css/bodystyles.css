@@ -1,0 +1,109 @@
+header {
+    height: 100px; /* Set header height */
+    background-size: cover; /* Make the background image cover the header */
+    display: flex;
+    justify-content: flex-end; /* Aligns button to the right */
+  }
+  
+  .button-container {
+    margin: 20px; /* Add margin to the button container */
+  }
+  
+  .apply-button {
+    background-color: #f3ae2c; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+body {
+    background-color: #dddada; /* set the background color */
+}
+
+
+#news {
+    font-family:  Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 200px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center; /* Aligns items horizontally */
+  align-items: center; /* Aligns items vertically */
+
+}
+
+.section img{
+    width: 80%;
+    height: 50%;
+}
+
+.section {
+  padding: 10px;
+  border: 1px gray;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section h2 {
+  margin-top: 10px;
+}
+
+.section p {
+  margin-top: 10px;
+}
+
+
+
+
+.page-change {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 200px;
+  }
+  
+  .page-change li {
+    margin: 0 5px;
+  }
+  
+  .page-change a {
+    display: block;
+    padding: 10px;
+    background-color: #4DA0DD;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 3px;
+
+  }
+  
+  .page-change a:hover {
+    background-color: #ce7337;
+  }
+  
+  .page-change a i {
+    font-size: 1.2em;
+  }
+
+
+

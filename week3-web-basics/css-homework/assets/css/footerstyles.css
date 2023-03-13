@@ -1,0 +1,79 @@
+footer {
+    background-color: #272e31; 
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+.footer-section {
+    width: 25%;
+    margin-left: 50px;
+  }
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 200px;
+  }
+  
+.footer-section li {
+    font-size:small;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    border-bottom: 1px solid #ccc; /* add a thin grey border to the bottom of each li element */
+    padding-bottom: 10px; /* add some spacing between each li element */
+  }
+
+.footer-section h3{
+    font-family:  Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+
+.footer-section a {
+    text-decoration: none; /* remove underline */
+    color: inherit; /* inherit text color from parent element */
+}
+
+
+.address-section b {
+    font-family:  Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+
+.address{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+
+.section-subfooter{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.section-subfooter p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+.bottomfooter2 {
+    position:absolute;
+    right: 200;
+}
